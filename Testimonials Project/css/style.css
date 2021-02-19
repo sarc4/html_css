@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/01.jpg") fixed center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.titulo {
+  margin-top: 3rem;
+  text-align: center;
+}
+.letra_fina {
+  font-size: 1.5rem;
+  color: darkkhaki;
+}
+.letra_gruesa {
+  font-size: 2.5rem;
+  color: rgb(202, 206, 193);
+}
+.container {
+  margin-top: 4rem;
+  height: 20rem;
+  width: 40rem;
+  background-color: rgba(182, 172, 172, 0.534);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iconos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fas.fa-star {
+  color: rgba(230, 163, 41, 0.85);
+}
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+  margin: 0 -5px;
+  color: rgb(43, 30, 27);
+}
+.fas.fa-chevron-left:hover,
+.fas.fa-chevron-right:hover {
+  color: darkkhaki;
+  cursor: pointer;
+}
+
+.avatar {
+  margin-top: -60px;
+  background: url(../img/02.jpg) no-repeat center center/cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.descripcion {
+  color: black;
+  text-align: center;
+  margin: 2rem;
+}

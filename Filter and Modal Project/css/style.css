@@ -1,0 +1,125 @@
+body {
+  font-family: "Kaushan Script", cursive;
+  background-color: peachpuff;
+  box-sizing: border-box;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 1.8rem;
+}
+strong {
+  color: rgb(255, 153, 203);
+}
+.categorias {
+  margin: 1rem 0 2rem 0;
+}
+
+.boton {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: rgb(255, 153, 203);
+  background-color: black;
+}
+
+.panelbusqueda {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  width: 402px;
+  border: 2px solid black;
+}
+
+.lupa {
+  margin: 0;
+  color: black;
+  background-color: rgb(255, 153, 203);
+  padding: 0.5rem 0.75rem;
+  border-style: none;
+}
+.lupa:active {
+  color: rgb(255, 153, 203);
+  background-color: black;
+}
+.busqueda {
+  border-style: none;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0.5rem 0.75rem;
+  width: 400px;
+}
+.busqueda:focus,
+.lupa:focus {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  max-width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 1rem auto;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 3%;
+}
+
+.item-img {
+  height: 300px;
+  transition-delay: 0.15s;
+  transition: all 0.75s; /* Zoom */
+  z-index: 0;
+}
+.item-img:hover {
+  transform: scale(1.3);
+}
+
+.item-img:hover ~ .item-chart {
+  transform: translate(-44px, -48px);
+}
+
+.item-desc {
+  position: relative;
+  background-color: lightgoldenrodyellow;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+.item-chart {
+  position: absolute;
+  right: -52px;
+  top: 300px;
+  width: 40px;
+  height: 40px;
+  background-color: lightgoldenrodyellow;
+  align-self: right;
+  font-size: 0.75;
+  transition: all 0.75s; /* Traslacion */
+  padding: 0.75rem;
+  border-top-left-radius: 10%;
+}
